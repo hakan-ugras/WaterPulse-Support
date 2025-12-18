@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterPulse - Support & Help</title>
+    <style>
+        :root {
+            --primary-blue: #007AFF;
+            --light-blue: #00C7FF;
+            --text-primary: #1D1D1F;
+            --text-secondary: #86868B;
+            --background: #FBFBFD;
+            --card-background: #FFFFFF;
+            --border-color: #D2D2D7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: var(--background);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .section p, .section li {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .feature-list {
+            display: grid;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .feature-item {
+            background: var(--card-background);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+        }
+
+        .troubleshooting-steps {
+            counter-reset: step-counter;
+        }
+
+        .troubleshooting-steps li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .troubleshooting-steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--primary-blue);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="app-icon">💧</div>
+            <h1>WaterPulse</h1>
+            <p>Your rhythmic hydration companion</p>
+        </header>
+
+        <main class="content">
+            <section class="section">
+                <h2>Welcome to WaterPulse Support</h2>
+                <p>WaterPulse is your smart hydration companion that helps you maintain optimal water intake throughout the day with intelligent notifications, personalized goals, and beautiful progress tracking.</p>
+            </section>
+
+            <section class="section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-title">🎯 Smart Onboarding</div>
+                        <p>Personalized hydration goals based on your weight, age, sex, and activity level using scientific formulas.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">🔔 Intelligent Notifications</div>
+                        <p>Auto-renewing reminders that pause when you reach your goal and resume when needed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">📊 Progress Tracking</div>
+                        <p>Real-time circular progress indicator with calendar history and heat map visualization.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-title">⚙️ Flexible Settings</div>
+                        <p>Customize notification intervals, active hours, and manage your hydration profile.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How is my daily hydration goal calculated?</div>
+                    <div class="faq-answer">Your goal is calculated using a scientific formula: 35ml per kg of body weight, adjusted for age (+10% under 18, -10% over 65), sex (-5% for females), and activity level (1.0x sedentary, 1.15x moderate, 1.3x active). Goals are kept within a safe range of 1500ml - 4000ml.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why aren't I receiving notifications?</div>
+                    <div class="faq-answer">Check that notifications are enabled in Settings > Notifications. WaterPulse also pauses reminders when you've reached your daily goal. If notifications stopped working, try toggling the notification setting off and on again in the app.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do the smart notifications work?</div>
+                    <div class="faq-answer">WaterPulse automatically schedules 30 days of notifications and renews them every 4 hours. The app pauses reminders when you reach your goal and sends milestone celebration notifications at 25%, 50%, and 75% progress.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I track different types of drinks?</div>
+                    <div class="faq-answer">Yes! WaterPulse supports various drink types including water, tea, coffee, and juice. Each drink type has a hydration multiplier that affects your effective hydration progress.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I change my notification schedule?</div>
+                    <div class="faq-answer">Go to Settings in the app to customize your reminder intervals (1-8 hours) and set your active hours. You can choose when you want to start and stop receiving reminders each day.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I update my personal information and goals?</div>
+                    <div class="faq-answer">Absolutely! Visit the Settings tab to update your weight, age, sex, activity level, and other personal information. Your daily goal will automatically recalculate based on the new information.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What do the colors in the calendar mean?</div>
+                    <div class="faq-answer">The calendar uses a heat map visualization where darker colors indicate days with higher hydration achievement. Light colors show days with lower intake, while the darkest shade represents days where you exceeded your goal.</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Troubleshooting</h2>
+                <h3>Notifications Not Working</h3>
+                <ol class="troubleshooting-steps">
+                    <li>Check that notifications are enabled for WaterPulse in iOS Settings > Notifications</li>
+                    <li>Verify that Do Not Disturb is not blocking notifications</li>
+                    <li>In the WaterPulse app, go to Settings and toggle notifications off, then back on</li>
+                    <li>Restart the app by closing it completely and reopening</li>
+                    <li>If issues persist, restart your device</li>
+                </ol>
+
+                <h3>App Performance Issues</h3>
+                <ol class="troubleshooting-steps">
+                    <li>Close other apps running in the background</li>
+                    <li>Restart WaterPulse by closing and reopening the app</li>
+                    <li>Ensure you have the latest version of WaterPulse from the App Store</li>
+                    <li>Restart your device if problems continue</li>
+                </ol>
+
+                <h3>Data Not Syncing</h3>
+                <ol class="troubleshooting-steps">
+                    <li>Make sure you have a stable internet connection</li>
+                    <li>Check that WaterPulse has permission to access cellular data in iOS Settings</li>
+                    <li>Force close and reopen the app</li>
+                    <li>Log a water entry to trigger a sync</li>
+                </ol>
+            </section>
+
+            <section class="section">
+                <h2>Privacy & Data</h2>
+                <p>WaterPulse takes your privacy seriously. All your personal information and hydration data is stored locally on your device. We do not collect, store, or share any personal information with third parties.</p>
+                
+                <h3>What Data We Store</h3>
+                <ul>
+                    <li>Personal information (weight, age, sex, activity level) for goal calculation</li>
+                    <li>Daily water intake entries and drink types</li>
+                    <li>Notification preferences and schedules</li>
+                    <li>Historical hydration data for calendar visualization</li>
+                </ul>
+
+                <p>All data remains on your device and is never transmitted to external servers.</p>
+            </section>
+
+            <section class="section">
+                <h2>System Requirements</h2>
+                <ul>
+                    <li><strong>iOS Version:</strong> iOS 17.0 or later</li>
+                    <li><strong>Storage:</strong> Minimal storage required (under 50MB)</li>
+                    <li><strong>Permissions:</strong> Notifications (for hydration reminders)</li>
+                    <li><strong>Compatible Devices:</strong> iPhone</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Tips for Success</h2>
+                <ul>
+                    <li><strong>Set realistic active hours:</strong> Configure your notification schedule to match your daily routine</li>
+                    <li><strong>Use quick actions:</strong> Take advantage of notification quick actions to log water without opening the app</li>
+                    <li><strong>Check your progress:</strong> Review the calendar view weekly to identify patterns and improve consistency</li>
+                    <li><strong>Update your profile:</strong> Adjust your personal information as your fitness level or routine changes</li>
+                    <li><strong>Celebrate milestones:</strong> Pay attention to milestone notifications - they help build positive hydration habits</li>
+                </ul>
+            </section>
+
+            <section class="section contact-info">
+                <h3>Need More Help?</h3>
+                <p>Can't find the answer you're looking for? We're here to help!</p>
+                <p><strong>Email Support:</strong> <a href="mailto:support@waterpulse-app.com">support@waterpulse-app.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 24 hours</p>
+                <p><strong>App Version:</strong> Please include your iOS version and WaterPulse version when contacting support</p>
+            </section>
+
+            <section class="section">
+                <h2>App Information</h2>
+                <p><strong>Developer:</strong> WaterPulse Team</p>
+                <p><strong>Category:</strong> Health & Fitness</p>
+                <p><strong>Last Updated:</strong> December 2024</p>
+                <p><strong>App Store:</strong> <a href="#" style="color: var(--primary-blue);">Download WaterPulse</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
